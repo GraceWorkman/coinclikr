@@ -1,0 +1,2 @@
+# coinclikr
+Play Coin Clikr
