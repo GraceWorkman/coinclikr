@@ -10,6 +10,7 @@
         <meta charset="utf-8"/>
         
         <!-- Check Mobile-->
+        <script type="text/Javascript">
         var isMobile = {
             Android: function() {
                 return navigator.userAgent.match(/Android/i);
@@ -30,6 +31,7 @@
                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
+        </script>
 
         <!-- Set the title bar of the page -->
         <title>Coin Clikr</title>
@@ -112,7 +114,7 @@
             </canvas>
             </div>
         </div>
-        <script type="text/Javascript">
+        
         if (isMobile.any()) {
             div=document.getElementsByClassName('fs')[0]
             canvas=document.getElementsByTagName('canvas' )[0]
